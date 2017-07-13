@@ -70,5 +70,26 @@ var q = function () {
     document.getElementById("show_query_date").innerHTML = res;
 }
 
+var hippo_query = function () {
+    var number = document.getElementById("qNumber").value;
+    if (isNaN(number)) {
+        alert("请输入数字！！");
+        return;
+    }
+    number = parseInt(number);
+
+    var result = (little_hippo_start_timestamp + seconds_one_day * (number - 1)) * 1000;
+    var tmp = new Date(result);
+    // var fullYear = tmp.getFullYear();
+    // var month = tmp.getMonth() + 1;
+    // var days = tmp.getDate();
+    // var res = prefixStr + fullYear + "年" + month + "月" + days + "日"
+    var prefixStr = "小河马出声第" + number + "天的日子~--> "
+    var res = prefixStr + tmp.Format("yyyy年MM月dd日");
+    document.getElementById("hippo_number").value = number;
+    document.getElementById("hippo_show_query_date").innerHTML = res;
+}
+
 document.getElementById("sub").onclick = q;
+document.getElementById("hippo_sub").onclick = hippo_query;
 

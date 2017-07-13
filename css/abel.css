@@ -10,83 +10,29 @@ body {
 /*background-attachment: fixed;*/
 /*}*/
 
-.color {
+.abel_font_color {
     color: #FF00FF;
     font-size: large
 }
 
 .little_hippo {
     width: 70px;
-    height: 55px;
+    height: 52px;
 }
 
-/*CSS代码片段*/
+input {
+    width: 300px;
 
-/* 定义一个走马灯动画 */
-
-@-webkit-keyframes marquee {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -100%;
-    }
 }
 
-@-moz-keyframes marquee {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -100%;
-    }
+.yyd_and_mmd {
+    background: orchid;
+    margin: 20px 0;
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, .4);
 }
 
-@-ms-keyframes marquee {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -100%;
-    }
-}
-
-@-o-keyframes marquee {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -100%;
-    }
-}
-
-@keyframes marquee {
-    0% {
-        left: 0
-    }
-    100% {
-        left: -100%
-    }
-}
-
-.marquee {
-    height: 30px;
-
-    overflow: hidden;
-    position: relative;
-}
-
-.marquee div {
-    display: block;
-    width: 200%;
-    height: 30px;
-
-    position: absolute;
-    overflow: hidden;
-
-    -webkit-animation: marquee 4s linear infinite;
-    -moz-animation: marquee 4s linear infinite;
-    -ms-animation: marquee 4s linear infinite;
-    -o-animation: marquee 4s linear infinite;
-    animation: marquee 4s linear infinite;
+.query_section{
+    background: #ebcccc;
+    margin: 20px 0;
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, .4);
 }
