@@ -28,13 +28,12 @@ function init() {
 
 function query() {
     var number = document.getElementById("qNumber").value;
-    alert(number);
     if (isNaN(number)) {
         alert("请输入数字！！");
         return;
     }
 
-    var result = (ss + seconds_one_day * number) * 1000;
+    var result = (start_timestamp + seconds_one_day * number) * 1000;
     var tmp = new Date(result);
     document.getElementById("show_query_date").innerHTML = tmp.toLocaleDateString();
 }
