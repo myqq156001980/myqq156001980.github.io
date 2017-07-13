@@ -71,7 +71,7 @@ var q = function () {
 }
 
 var hippo_query = function () {
-    var number = document.getElementById("qNumber").value;
+    var number = document.getElementById("hippo_number").value;
     if (isNaN(number)) {
         alert("请输入数字！！");
         return;
@@ -84,7 +84,7 @@ var hippo_query = function () {
     // var month = tmp.getMonth() + 1;
     // var days = tmp.getDate();
     // var res = prefixStr + fullYear + "年" + month + "月" + days + "日"
-    var prefixStr = "小河马出声第" + number + "天的日子~--> "
+    var prefixStr = "小河马出生第" + number + "天的日子~--> "
     var res = prefixStr + tmp.Format("yyyy年MM月dd日");
     document.getElementById("hippo_number").value = number;
     document.getElementById("hippo_show_query_date").innerHTML = res;
