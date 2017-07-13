@@ -33,14 +33,16 @@ var q = function () {
         alert("请输入数字！！");
         return;
     }
+    number = parseInt(number);
 
     var result = (start_timestamp + seconds_one_day * number) * 1000;
     var tmp = new Date(result);
     var fullYear = tmp.getFullYear();
     var month = tmp.getMonth();
     var days = tmp.getDay();
-    var res = fullYear + "年" + month + "月" + days + "日"
-
+    var prefixStr = "萌萌哒和园园哒相遇" + number + "天的日子--> "
+    var res = prefixStr + fullYear + "年" + month + "月" + days + "日"
+    document.getElementById("qNumber").value = number;
     document.getElementById("show_query_date").innerHTML = res;
 }
 
