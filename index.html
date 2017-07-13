@@ -48,7 +48,7 @@
         var progressBar = document.getElementById('p');
         progressBar.value = days;
         var sp = document.getElementById('sp');
-        sp.value = days/10000 * 100;
+        sp.innerHTML = (days/100).toString();
         var progress_str = "width:" + now_days / 100 + "%;"
         document.getElementById("little_goal").setAttribute("style", progress_str);
         document.getElementById("little_goal").setAttribute("aria-valuenow", now_days);
