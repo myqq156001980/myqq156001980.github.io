@@ -1,0 +1,21 @@
+/*body {*/
+/*background: url(../image/hippo.jpg);*/
+/*}*/
+
+/*.bg {*/
+/*background: url(../image/hippo.jpg);*/
+/*filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";*/
+/*-moz-background-size: 100% 100%;*/
+/*background-size: 100% 100%;*/
+/*background-attachment: fixed;*/
+/*}*/
+
+.color {
+    color: #9898ff;
+    font-size: large
+}
+
+.little_hippo {
+    width: 70px;
+    height: 55px;
+}

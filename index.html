@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>园园哒和萌萌哒</title>
+    <link rel="stylesheet" href="css/abel.css" type="text/css">
+    <script src="js/index.js"></script>
 
 </head>
 <body>
 
-
-<div class="jumbotron">
-    <h1>Days We are together--<span id="days"></span>days!</h1>
+<div>
+    <h1>
+        萌萌哒和园园哒 ~ together -->
+        <span id="mmd_yyd_days"></span> days!
+        Goal:
+        <progress id="p" max=10000></progress>
+        <span id="sp"></span>%
+        <br/>
+    </h1>
+    <h2>小河马
+        <img src="image/hippo.png" class="little_hippo">
+        ~ already born -->
+        <span id="little_hippo_days"></span> days!
+    </h2>
 </div>
 
-<p>Goal: <progress id="p" max=10000></progress><span id="sp"></span>%</p>
-<span style="color: #9898ff;font-size: large">10000--->days to go!</span>
+<!--<p>Goal:-->
+    <!--<progress id="p" max=10000></progress>-->
+    <!--<span id="sp"></span>%-->
+    <!--<br/>-->
+    <!--<span class="color">10000-&ndash;&gt;days to go!</span>-->
+<!--</p>-->
 
-<img src="image/hippo.jpg">
+<div>
+    <input type="text" id="qNumber" placeholder="请输入查询天数(数字)" value=""/>
+    <input type="button" value="查询" id="query" onclick="query()">
+    <span class="color" id="show_query_date"></span>
+</div>
+
+<!--<img src="image/hippo.jpg">-->
 </body>
 
 
 <script>
     window.onload = init;
-    function init() {
-        var start_day = new Date('2015/08/22');
-        var ss = Math.floor(start_day.getTime() / 1000);
-        var current_day = new Date();
-        var cs = Math.floor(current_day.getTime() / 1000);
-        var now_days = Math.ceil((cs - ss) / 86400);
-        document.getElementById("days").innerHTML = now_days.toString();
-        var progressBar = document.getElementById('p');
-        progressBar.value = now_days;
-        var sp = document.getElementById('sp');
-        sp.innerHTML = (now_days/100).toString();
-
-
-    }
 </script>
 </html>
