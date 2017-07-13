@@ -1,6 +1,7 @@
 /**
  * Created by sunzqc on 2017/7/13.
  */
+
 var start_day = new Date('2015/08/22');
 var start_timestamp = Math.floor(start_day.getTime() / 1000);
 
@@ -26,7 +27,7 @@ function init() {
 }
 
 
-function query() {
+var q = function () {
     var number = document.getElementById("qNumber").value;
     if (isNaN(number)) {
         alert("请输入数字！！");
@@ -43,15 +44,5 @@ function query() {
     document.getElementById("show_query_date").innerHTML = res;
 }
 
-// document.getElementById("query").onclick = function () {
-//     alert("here");
-//     var number = document.getElementById("qNumber");
-//     if (isNaN(number)) {
-//         alert("请输入数字！！");
-//         return;
-//     }
-//
-//     var result = (ss + seconds_one_day * number) * 1000;
-//     var tmp = new Date(result);
-//     document.getElementById("show_query_date").innerHTML = tmp.toLocaleDateString();
-// };
+document.getElementById("sub").onclick = q;
+
