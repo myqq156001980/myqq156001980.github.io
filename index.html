@@ -44,8 +44,11 @@
         var cs = Math.floor(current_day.getTime() / 1000);
         var now_days = Math.ceil((cs - ss) / 86400).toString();
         document.getElementById("days").innerHTML = now_days.toString();
+        var days = Math.ceil((cs - ss) / 86400);
         var progressBar = document.getElementById('p');
-        progressBar.value = Math.ceil((cs - ss) / 86400);
+        progressBar.value = days;
+        var sp = document.getElementById('sp');
+        sp.value = days/10000 * 100;
         var progress_str = "width:" + now_days / 100 + "%;"
         document.getElementById("little_goal").setAttribute("style", progress_str);
         document.getElementById("little_goal").setAttribute("aria-valuenow", now_days);
