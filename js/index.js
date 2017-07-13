@@ -35,7 +35,12 @@ function query() {
 
     var result = (start_timestamp + seconds_one_day * number) * 1000;
     var tmp = new Date(result);
-    document.getElementById("show_query_date").innerHTML = tmp.toLocaleDateString().replace('/', "年").replace('/', '月') + "日";
+    var fullYear = tmp.getFullYear();
+    var month = tmp.getMonth();
+    var days = tmp.getDay();
+    var res = fullYear + "年" + month + "月" + days + "日"
+
+    document.getElementById("show_query_date").innerHTML = res;
 }
 
 // document.getElementById("query").onclick = function () {
