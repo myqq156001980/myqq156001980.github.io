@@ -156,15 +156,20 @@
 
                 <div>
                     <input type="text" id="qNumber" placeholder="园园哒和萌萌哒，天数(数字)" value="" style="width: 300px"/>
-                    <br/>
+                    <div style="height: 50px">
+
+                        <span class="abel_font_color" id="show_query_date"></span>
+
+                    </div>
                     <input type="text" id="hippo_number" placeholder="小河马，天数(数字)" value="" style="width: 300px"/>
+                    <div style="height: 50px">
+
+                        <span class="abel_font_color" id="hippo_show_query_date"></span>
+
+                    </div>
                 </div>
 
-                <div style="height: 50px">
 
-                    <span class="abel_font_color" id="show_query_date"></span>
-
-                </div>
             </div>
         </div>
         <div class="clear"></div>
@@ -303,7 +308,7 @@
         var prefixStr = "小河马出生第" + number + "天的日子~--> "
         var res = prefixStr + tmp.Format("yyyy年MM月dd日");
 //        document.getElementById("hippo_number").value = number;
-        document.getElementById("show_query_date").innerHTML = res;
+        document.getElementById("hippo_show_query_date").innerHTML = res;
     }
 
     document.getElementById("qNumber").onblur = q;
