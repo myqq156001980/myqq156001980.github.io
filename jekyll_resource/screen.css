@@ -261,6 +261,10 @@ table {
     width: 33.3332%;
 }
 
+.grid .one-second, .grid .w-1-2 {
+    width: 50%;
+}
+
 .grid .two-thirds, .grid .w-2-3 {
     width: 66.6665%;
 }

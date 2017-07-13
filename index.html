@@ -1,54 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN"
+      class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <title>园园哒和萌萌哒</title>
-    <link rel="stylesheet" href="css/abel.css" type="text/css">
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="Jekyll • Simple, blog-aware, static sites - Feed"
+          href="http://jekyll.com.cn/feed.xml">
+    <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch"
+          href="https://github.com/jekyll/jekyll/commits/master.atom">
+    <link href="jekyll_resource/css" rel="stylesheet" type="text/css">
+    <link href="jekyll_resource/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="jekyll_resource/screen.css">
+    <!--<link rel="stylesheet" href="css/abel.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="icon" type="image/png" href="http://jekyll.com.cn/favicon.png">
+    <!--<script src="jekyll_resource/modernizr.min.js.下载"></script>-->
 </head>
-<body>
 
 
-<div>
-    <h1>
-        萌萌哒和园园哒 ~ together -->
-        <span id="mmd_yyd_days"></span> days!
-    </h1>
-    <h2>小河马
-        <img src="image/hippo_small.png" class="little_hippo">
-        ~ already born -->
-        <span id="little_hippo_days"></span> days!
-    </h2>
-</div>
+<body class="wrap">
+<header>
+    <!--<nav class="mobile-nav show-on-mobiles">-->
+    <!--<ul>-->
+    <!--<li class="current">-->
+    <!--<a>memorial</a>-->
+    <!--</li>-->
+    <!--<li class="">-->
+    <!--<a>milestone</a>-->
+    <!--</li>-->
+    <!--<li class="">-->
+    <!--<a>新闻</a>-->
+    <!--</li>-->
+    <!--</ul>-->
 
-<!--<p>Goal:-->
-<!--<progress id="p" max=10000></progress>-->
-<!--<span id="sp"></span>%-->
-<!--<br/>-->
-<!--<span class="color">10000-&ndash;&gt;days to go!</span>-->
+    <!--</nav>-->
+    <div class="grid">
+        <div class="unit center-on-mobiles">
+            <h1>
+                <a>
+                    <span>Jekyll</span>
+                    <img src="image/hippo.png" width="140" height="104" alt="">
+                </a>
+                执子之手，与子偕老。
+            </h1>
+
+        </div>
+
+        <!--<nav class="main-nav unit two-thirds hide-on-mobiles">-->
+        <!--<ul>-->
+        <!--<li class="current">-->
+        <!--<a>memorial</a>-->
+        <!--</li>-->
+        <!--<li class="">-->
+        <!--<a>milestone</a>-->
+        <!--</li>-->
+        <!--<li class="">-->
+        <!--<a>新闻</a>-->
+        <!--</li>-->
+
+        <!--</ul>-->
+
+        <!--</nav>-->
+    </div>
+</header>
+
+
+<section class="intro">
+    <div class="grid">
+        <div class="unit whole center-on-mobiles">
+            <p class="first">
+            <div>
+                <h1>
+                    萌萌哒和园园哒 ~ together -->
+                    <span id="mmd_yyd_days"></span> days!
+                </h1>
+                <h2>小河马
+                    <img src="image/hippo_small.png" class="little_hippo">
+                    ~ already born -->
+                    <span id="little_hippo_days"></span> days!
+                </h2>
+            </div>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="features">
+    <div class="grid">
+        <div class="unit one-second">
+            <h2>结婚纪念日</h2>
+            <p>
+                2016年03月08日
+            </p>
+        </div>
+        <div class="unit one-second">
+            <h2>小河马生日</h2>
+            <p>2017年02月17日</p>
+
+        </div>
+        <!--<div class="unit one-third">-->
+        <!--<h2>日期查询</h2>-->
+
+        <!--<div>-->
+        <!--<input type="text" id="qNumber" placeholder="园园哒和萌萌哒，天数(数字)" value=""/>-->
+        <!--<br/>-->
+        <!--<input type="text" id="hippo_number" placeholder="小河马天数(数字)" value=""/>-->
+        <!--&lt;!&ndash;<input type="button" value="查询" id="sub" style="color: #2b542c">&ndash;&gt;-->
+        <!--&lt;!&ndash;<button type="button" id="sub">查询</button>&ndash;&gt;-->
+        <!--</div>-->
+
+        <!--<div style="height: 50px">-->
+
+
+        <!--<span class="abel_font_color" id="show_query_date"></span>-->
+
+        <!--</div>-->
+
+        <!--</div>-->
+        <div class="clear"></div>
+    </div>
+</section>
+<section class="quickstart">
+    <div class="grid">
+        <div class="unit golden-small center-on-mobiles">
+            <h4>日期查询</h4>
+        </div>
+        <div class="unit golden-large code">
+            <p class="title">输入查询天数</p>
+            <div class="shell">
+                <!--<p class="line">-->
+                <!--<span class="path">~</span>-->
+                <!--<span class="prompt">$</span>-->
+                <!--<span class="command">gem install jekyll</span>-->
+                <!--</p>-->
+                <!--<p class="line">-->
+                <!--<span class="path">~</span>-->
+                <!--<span class="prompt">$</span>-->
+                <!--<span class="command">jekyll new my-awesome-site</span>-->
+                <!--</p>-->
+                <!--<p class="line">-->
+                <!--<span class="path">~</span>-->
+                <!--<span class="prompt">$</span>-->
+                <!--<span class="command">cd my-awesome-site</span>-->
+                <!--</p>-->
+                <!--<p class="line">-->
+                <!--<span class="path">~/my-awesome-site</span>-->
+                <!--<span class="prompt">$</span>-->
+                <!--<span class="command">jekyll serve</span>-->
+                <!--</p>-->
+                <!--<p class="line">-->
+                <!--<span class="output"># =&gt; Now browse to http://localhost:4000</span>-->
+                <!--</p>-->
+
+
+                <div>
+                    <input type="text" id="qNumber" placeholder="园园哒和萌萌哒，天数(数字)" value="" style="width: 300px"/>
+                    <br/>
+                    <input type="text" id="hippo_number" placeholder="小河马天数(数字)" value="" style="width: 300px"/>
+                </div>
+
+                <div style="height: 50px">
+
+                    <span class="abel_font_color" id="show_query_date"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!--<section class="free-hosting">-->
+<!--<div class="grid">-->
+<!--<div class="unit whole">-->
+<!--<div class="grid pane">-->
+<!--<div class="unit whole center-on-mobiles">-->
+<!--<img src="jekyll_resource/octojekyll.png" alt="Free Jekyll hosting on GitHub Pages">-->
+<!--<div class="pane-content">-->
+<!--<h2 class="center-on-mobiles">使用 GitHub 的<strong>免费主机</strong></h2>-->
+<!--<p>不想再与主机服务商打交道? <a href="http://pages.github.com/">GitHub Pages</a> 可以运行 <em>Jekyll</em>,-->
+<!--你很简单就可以完全免费的在 GitHub 上发布网站 — <a-->
+<!--href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">自定义域名</a>-->
 <!--</p>-->
+<!--<a href="http://pages.github.com/" class="">了解更多 GitHub Pages →</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="clear"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
 
-<div>
-    <label>查询：</label><input type="text" id="qNumber" placeholder="萌萌哒和园园哒，天数(数字)" value=""/>
-    <button type="button" class="btn btn-info" id="sub">查询</button>
-    &nbsp;&nbsp;<span class="abel_font_color" id="show_query_date"></span>
-</div>
-<br/>
-<div>
-    <label>查询：</label><input type="text" id="hippo_number" placeholder="小河马，天数(数字)" value=""/>
-    <button type="button" class="btn btn-info" id="hippo_sub">查询</button>
-    &nbsp;&nbsp;<span class="abel_font_color" id="hippo_show_query_date"></span>
-</div>
 
-<!--<img src="image/hippo.jpg">-->
-</body>
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="js/jquery.js"></script>
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
+<footer>
+    <div class="grid">
+        <div class="unit one-third center-on-mobiles">
+            <p>执子之手，与子偕老。</p>
+        </div>
+        <div class="unit two-thirds align-right center-on-mobiles">
+            <p>
+                Proudly hosted by
+                <a href="https://github.com/">
+                    <img src="jekyll_resource/footer-logo.png" alt="GitHub • Social coding">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="jekyll_resource/h.js" type="text/javascript"></script>
 <script>
     window.onload = init;
+    var start_day = new Date('2015/08/22');
+    var start_timestamp = Math.floor(start_day.getTime() / 1000);
+
+    var little_hippo_start_day = new Date('2017/02/17');
+    var little_hippo_start_timestamp = Math.floor(little_hippo_start_day.getTime() / 1000);
+
+    var seconds_one_day = 86400;
+
+    // 对Date的扩展，将 Date 转化为指定格式的String
+    // 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符，
+    // 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字)
+    // js中月份是从0开始的要 + 1
+    // 例子：
+    // (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423
+    // (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18
+    Date.prototype.Format = function (fmt) { //author: szq
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "h+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+    function init() {
+
+        var current_day = new Date();
+        var current_timestamp = Math.floor(current_day.getTime() / 1000);
+        var now_days = Math.ceil((current_timestamp - start_timestamp) / seconds_one_day);
+        document.getElementById("mmd_yyd_days").innerHTML = now_days.toString();
+        // var progressBar = document.getElementById('p');
+        // progressBar.value = now_days;
+        // var sp = document.getElementById('sp');
+        // sp.innerHTML = (now_days / 100).toString();
+
+        var little_hippo_days = Math.ceil((current_timestamp - little_hippo_start_timestamp) / seconds_one_day);
+        document.getElementById("little_hippo_days").innerHTML = little_hippo_days.toString();
+
+    }
+
+
+    var q = function () {
+        var number = document.getElementById("qNumber").value;
+        if (isNaN(number)) {
+            alert("请输入数字！！");
+            return;
+        }
+        number = parseInt(number);
+
+        var result = (start_timestamp + seconds_one_day * (number - 1)) * 1000;
+        var tmp = new Date(result);
+        // var fullYear = tmp.getFullYear();
+        // var month = tmp.getMonth() + 1;
+        // var days = tmp.getDate();
+        // var res = prefixStr + fullYear + "年" + month + "月" + days + "日"
+        var prefixStr = "萌萌哒和园园哒相遇" + number + "天的日子~--> "
+        var res = prefixStr + tmp.Format("yyyy年MM月dd日");
+        document.getElementById("qNumber").value = number;
+        document.getElementById("show_query_date").innerHTML = res;
+    }
+
+    var hippo_query = function () {
+        var number = document.getElementById("hippo_number").value;
+        if (isNaN(number)) {
+            alert("请输入数字！！");
+            return;
+        }
+        number = parseInt(number);
+
+        var result = (little_hippo_start_timestamp + seconds_one_day * (number - 1)) * 1000;
+        var tmp = new Date(result);
+        // var fullYear = tmp.getFullYear();
+        // var month = tmp.getMonth() + 1;
+        // var days = tmp.getDate();
+        // var res = prefixStr + fullYear + "年" + month + "月" + days + "日"
+        var prefixStr = "小河马出生第" + number + "天的日子~--> "
+        var res = prefixStr + tmp.Format("yyyy年MM月dd日");
+        document.getElementById("hippo_number").value = number;
+        document.getElementById("show_query_date").innerHTML = res;
+    }
+
+    document.getElementById("qNumber").onblur = q;
+    document.getElementById("hippo_number").onblur = hippo_query;
+
 </script>
+
+</body>
 </html>
