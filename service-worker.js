@@ -13,6 +13,7 @@ var filesToCache = [
     'js/abel.js',
     "jekyll_resource/h.js",
     "image/hippo_small.png",
+    "image/hippo.png",
     "jekyll_resource/css",
     "jekyll_resource/css(1)",
     "jekyll_resource/screen.css",
