@@ -6,7 +6,7 @@
  * Created by sunzqc on 2017/7/18.
  */
 
-var cacheName = "index-cache-1";
+var cacheName = "index-cache-2";
 var filesToCache = [
     '',
     'index.html',
