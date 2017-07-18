@@ -8,7 +8,7 @@
 
 var cacheName = "index-cache-1";
 var filesToCache = [
-    '/',
+    '',
     'index.html',
     'js/abel.js',
     "jekyll_resource/h.js",
