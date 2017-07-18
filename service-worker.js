@@ -6,7 +6,7 @@
  * Created by sunzqc on 2017/7/18.
  */
 
-var cacheName = "index-cache-2";
+var cacheName = "index-cache-3";
 var filesToCache = [
     '',
     'index.html',
@@ -17,7 +17,8 @@ var filesToCache = [
     "jekyll_resource/css",
     "jekyll_resource/css(1)",
     "jekyll_resource/screen.css",
-    "favicon.ico"
+    "favicon.ico",
+    "jekyll_resource/footer-logo.png"
 ];
 
 
