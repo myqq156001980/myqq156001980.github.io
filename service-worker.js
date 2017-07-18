@@ -7,19 +7,16 @@
  */
 
 //每次更新文件记得增加数字 index-cache-[number]
-var cacheName = "index-cache-3";
+var cacheName = "index-cache-4";
 var filesToCache = [
     '',
     'index.html',
     'js/abel.js',
-    "jekyll_resource/h.js",
     "image/hippo_small.png",
     "image/hippo.png",
-    "jekyll_resource/css",
-    "jekyll_resource/css(1)",
-    "jekyll_resource/screen.css",
+    "css/screen.css",
     "favicon.ico",
-    "jekyll_resource/footer-logo.png"
+    "image/footer-logo.png"
 ];
 
 
