@@ -6,6 +6,7 @@
  * Created by sunzqc on 2017/7/18.
  */
 
+//每次更新文件记得增加数字 index-cache-[number]
 var cacheName = "index-cache-3";
 var filesToCache = [
     '',
