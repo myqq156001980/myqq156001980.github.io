@@ -36,14 +36,14 @@
         var current_day = new Date();
         var current_timestamp = Math.floor(current_day.getTime() / 1000);
         var now_days = Math.ceil((current_timestamp - start_timestamp) / seconds_one_day);
-        document.getElementById("mmd_yyd_days").innerHTML = now_days.toString();
+        document.getElementById("mmd_yyd_days").innerHTML = "<mark>" + now_days.toString() + "</mark>>";
         // var progressBar = document.getElementById('p');
         // progressBar.value = now_days;
         // var sp = document.getElementById('sp');
         // sp.innerHTML = (now_days / 100).toString();
 
         var little_hippo_days = Math.ceil((current_timestamp - little_hippo_start_timestamp) / seconds_one_day);
-        document.getElementById("little_hippo_days").innerHTML = little_hippo_days.toString();
+        document.getElementById("little_hippo_days").innerHTML = "<mark>" + little_hippo_days.toString() + "</mark>";
 
     }
 
