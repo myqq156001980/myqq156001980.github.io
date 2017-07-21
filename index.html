@@ -7,6 +7,7 @@
     <title>园园哒和萌萌哒</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
 
@@ -16,9 +17,9 @@
 <body class="wrap">
 <header>
 
-    <div class="grid">
+    <div class="animated bounceInDown grid">
         <div class="unit center-on-mobiles">
-            <h1 style="color: lightsalmon; font-size: 300%">
+            <h1 style="font-size: 300%">
                 <img src="image/hippo.png" width="140" height="104" alt="">
                 执子之手，与子偕老。
             </h1>
@@ -29,46 +30,46 @@
 </header>
 
 
-<section class="intro">
+<section class="intro  animated fadeInLeftBig">
     <div class="grid">
         <div class="unit whole center-on-mobiles">
             <p class="first">
             <div>
                 <h2>
-                    <span style="color: #FF00FF">萌萌哒</span>
-                    <span style="color: lightsalmon">和</span>
-                    <span style="color:yellow;">园园哒</span>
-                    <span style="color: lightsalmon">~</span>
-                    <span style="color: lightsalmon">together</span>
-                    <span style="color: lightsalmon">--></span>
-                    <span id="mmd_yyd_days" style="color: lightsalmon"></span>
-                    <span style="color: lightsalmon">days!</span>
+                    <span>萌萌哒</span>
+                    <span>和</span>
+                    <span>园园哒</span>
+                    <span>~</span>
+                    <span>together</span>
+                    <span>--></span>
+                    <span id="mmd_yyd_days"></span>
+                    <span>days!</span>
 
 
                 </h2>
                 <h2>
-                    <span style="color: #FF00FF">小河马</span>
+                    <span>小河马</span>
                     <img src="image/hippo_small.png" class="little_hippo">
-                    <span style="color: lightsalmon">~ already born --></span>
-                    <span id="little_hippo_days" style="color: lightsalmon"></span>
-                    <span style="color: lightsalmon">days!</span>
+                    <span>~ already born --></span>
+                    <span id="little_hippo_days"></span>
+                    <span>days!</span>
                 </h2>
             </div>
             </p>
         </div>
     </div>
 </section>
-<section class="features">
+<section class="features animated lightSpeedIn">
     <div class="grid">
         <div class="unit one-second">
-            <h2 style="color: lightsalmon">结婚纪念日</h2>
-            <p style="color: lightsalmon">
+            <h2>结婚纪念日</h2>
+            <p>
                 2016年03月08日
             </p>
         </div>
         <div class="unit one-second">
-            <h2 style="color: lightsalmon">小河马生日</h2>
-            <p style="color: lightsalmon">2017年02月17日</p>
+            <h2>小河马生日</h2>
+            <p>2017年02月17日</p>
 
         </div>
 
@@ -77,24 +78,24 @@
 </section>
 <section class="quickstart">
     <div class="grid">
-        <div class="unit golden-small center-on-mobiles">
-            <h4 style="color: blueviolet">日期查询</h4>
+        <div class="unit golden-small center-on-mobiles animated rotateIn">
+            <h4>日期查询</h4>
         </div>
-        <div class="unit golden-large code">
-            <p class="title" style="color: teal">输入查询天数</p>
+        <div class="unit golden-large code animated lightSpeedIn">
+            <p class="title">输入查询天数</p>
             <div class="shell">
 
                 <div>
                     <input type="text" id="qNumber" placeholder="园园哒和萌萌哒，天数(数字)" value="" style="width: 300px"/>
                     <div style="height: 50px">
 
-                        <span style="color: gold" id="show_query_date"></span>
+                        <span id="show_query_date"></span>
 
                     </div>
                     <input type="text" id="hippo_number" placeholder="小河马，天数(数字)" value="" style="width: 300px"/>
                     <div style="height: 50px">
 
-                        <span style="color: gold" id="hippo_show_query_date"></span>
+                        <span  id="hippo_show_query_date"></span>
 
                     </div>
                 </div>

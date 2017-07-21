@@ -15,6 +15,7 @@ var filesToCache = [
     "image/hippo_small.png",
     "image/hippo.png",
     "css/screen.css",
+    "css/animate.min.css",
     "favicon.ico",
     "image/footer-logo.png"
 ];
