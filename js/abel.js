@@ -98,13 +98,41 @@
     document.getElementById("hippo_number").onblur = hippo_query;
     init();
 
-    // TODO add service worker code here
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('./service-worker.js')
-            .then(function () {
-                console.log('Service Worker Registered');
-            });
+
+
+    function changeColor() {
+        var colors = [
+            "#FFB90F",
+            "#FF4500",
+            "#EEE685",
+            "#EE7AE9",
+            "#E0FFFF",
+            "#E066FF",
+            "#E066FF",
+            "EE00EE",
+        ]
+
+        var color = "#";
+        for (var i = 0; i < 3; i++) {
+            var res = Math.round(Math.random() * 255);
+            color += res.toString(16);
+        }
+
+        document.getElementById("mmd_yyd_days").style.color = color;
+        document.getElementById("little_hippo_days").style.color = color;
+
+
     }
+
+    window.setInterval(changeColor, 1000);
+
+    // TODO add service worker code here
+    // if ('serviceWorker' in navigator) {
+    //     navigator.serviceWorker
+    //         .register('./service-worker.js')
+    //         .then(function () {
+    //             console.log('Service Worker Registered');
+    //         });
+    // }
 
 })();
