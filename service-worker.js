@@ -7,7 +7,7 @@
  */
 
 //每次更新文件记得增加数字 index-cache-[number]
-var cacheName = "index-cache-6";
+var cacheName = "index-cache-7";
 var filesToCache = [
     '',
     'index.html',
